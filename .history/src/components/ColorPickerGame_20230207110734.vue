@@ -9,9 +9,12 @@
 </template>
 
 <script>
-import colorPickerManager from "../composables/ColorPickerGame-manager";
+import { ref, reactive } from "@vue/reactivity";
+import colorPickerManager from "..";
 export default {
   setup() {
+    // const colors = ["green", "red", "blue", "purple"];
+    // let message = ref("Pick a color...");
     let { message } = colorPickerManager();
     const { colors } = colorPickerManager();
     const matchColor = (value) => {

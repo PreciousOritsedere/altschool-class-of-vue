@@ -9,9 +9,11 @@
 </template>
 
 <script>
+
 import colorPickerManager from "../composables/ColorPickerGame-manager";
 export default {
   setup() {
+    
     let { message } = colorPickerManager();
     const { colors } = colorPickerManager();
     const matchColor = (value) => {
