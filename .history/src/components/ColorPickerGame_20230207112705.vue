@@ -12,8 +12,9 @@
 import colorPickerManager from "../composables/ColorPickerGame-manager";
 export default {
   setup() {
-    const { message, colors, matchColor } = colorPickerManager();
-
+    let { message } = colorPickerManager();
+    const { colors, message  } = colorPickerManager();
+    
     return { colors, message, matchColor };
   },
 };

@@ -9,11 +9,13 @@
 </template>
 
 <script>
+
 import colorPickerManager from "../composables/ColorPickerGame-manager";
 export default {
   setup() {
+    
     const { message, colors, matchColor } = colorPickerManager();
-
+    // 
     return { colors, message, matchColor };
   },
 };
